@@ -6,7 +6,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Lobster', cursive;
-  font-size: 17px;  
+  font-size: 17px;
+  
  }
 body{
     background-color:#e2ffff; 
@@ -49,14 +50,29 @@ header{
 
 }
 .header .nav-links a{
-    font-size: 700;
+    font-size: 1000;
     color: #8268dd;
     text-decoration: none;
 }
 .header .nav-links li a:hover{
     color: #bd68dd;
 }
-/*Estes es todo el estilo del header (Todo lo de arriva)*/
+.header .btn button{
+    font-weight: 700;
+    color: aliceblue;
+    padding: 9px 25px;
+    background-color: #8268dd;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.header .btn button:hover{
+    background-color: #8268dd;
+    color: #68dda1;
+    transform: scale(1,1);
+}
+/*Estes es todo el estilo del header (Todo lo de arriba)*/
 
 /*Empieza el carrousel*/
 .carrousel{
@@ -114,8 +130,26 @@ i{
     width: 100%;
     height: 100%;
 }
+/*Estilo para la tarjeta de ventas*/
 #tarjetaVenta{
+    align-items: center;
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    
+}
+/*El estilo del titulo de los productos*/
+#tituloOfertas{
+    background-color: #8268dd;
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-family: 'Lobster', cursive;
+    border: none;
+    border-radius: 50px;
 }
