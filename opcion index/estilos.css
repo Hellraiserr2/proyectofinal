@@ -153,3 +153,12 @@ i{
     border: none;
     border-radius: 50px;
 }
+#footer{
+    background-color: #a1ecd9;
+    height: 200px;
+    font-family: 'Lobster', cursive;
+    font-size: 17px;
+}
+#letrasFooter{
+    color: #8268dd;
+}

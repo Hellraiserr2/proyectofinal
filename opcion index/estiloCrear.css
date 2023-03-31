@@ -1,0 +1,115 @@
+/*El import es para importar la fuente de la letra de google*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+header{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: 'Lobster', cursive;
+ font-size: 17px;
+ 
+}
+body{
+   background-color:#e2ffff; 
+}
+header{
+   background-color: #a1ecd9;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 100px;
+   padding: 5px 10%;
+}
+/*este header.logo es para que cuando se pase el mouse por el logo se pueda clickear*/
+.header .logo{
+   cursor: pointer;
+   margin-right:auto ;
+
+}
+.header .logo img{
+   height: 100px;
+   width: auto;
+   /*Transition es para que la imagen se demore en agrandar*/
+   transition: all 0.3s;
+}
+/*Este bloque es para que el logo se agrande cuando pasen por el*/
+.header.logo img:hover{
+   transform: scale(1,2);
+}
+.header .nav-links{
+   list-style: none;
+}
+/*selecciono los elementos li para alinearlos de derecha a izquierda*/
+.header .nav-links li{
+   display: inline-block;
+   padding: 0 20px;
+
+}
+.header .nav-links li:hover{
+   transform: scale(1.1);
+
+}
+.header .nav-links a{
+   font-size: 1000;
+   color: #8268dd;
+   text-decoration: none;
+}
+.header .nav-links li a:hover{
+   color: #bd68dd;
+}
+.header .btn button{
+   font-weight: 700;
+   color: aliceblue;
+   padding: 9px 25px;
+   background-color: #8268dd;
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+}
+.header .btn button:hover{
+   background-color: #8268dd;
+   color: #68dda1;
+   transform: scale(1,1);
+}
+#tarjetaVenta{
+    align-items: center;
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    
+}
+/*El estilo del titulo de los productos*/
+#tituloOfertas{
+    background-color: #8268dd;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 100px;
+    font-family: 'Lobster', cursive;
+    border: none;
+    border-radius: 50px;
+}
+#footer{
+    background-color: #a1ecd9;
+    height: 200px;
+    font-family: 'Lobster', cursive;
+    font-size: 17px;
+    
+    
+}
+#letrasFooter{
+    color: #8268dd;
+}
+#formularioCrear{
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+
+}
