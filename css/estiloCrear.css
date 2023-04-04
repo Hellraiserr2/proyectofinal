@@ -72,29 +72,8 @@ header{
    color: #68dda1;
    transform: scale(1,1);
 }
-#tarjetaVenta{
-    align-items: center;
-    display: inline-block;
-    justify-content: space-between;
-    margin-right: 50px;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-bottom: 50px;
-    
-}
-/*El estilo del titulo de los productos*/
-#tituloOfertas{
-    background-color: #8268dd;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-top: 100px;
-    font-family: 'Lobster', cursive;
-    border: none;
-    border-radius: 50px;
-}
+
+
 #footer{
     background-color: #a1ecd9;
     height: 200px;
@@ -106,10 +85,55 @@ header{
 #letrasFooter{
     color: #8268dd;
 }
-#formularioCrear{
-    align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    
+/* estilos del formulario*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/*Caja del formulario*/
+.formularioCrear{
+   width: 400px;
+   background: #a1ecd9;
+   padding: 30px;
+   margin: auto;
+   margin-top: 100px;
+   border-radius: 4px;
+   color: #000;
+   box-shadow: 7px 13px 37px #000;
+   margin-bottom: 100px;
+}
+/*Letras del titulo del formulario*/
+.formularioCrear h4{
+   font-size: 22px;
+   margin-bottom: 20px;
+}
+/*estilos de los inputs*/
+.inputCrear{
+   width: 100%;
+   background: aliceblue;
+   padding: 10px;
+   border-radius: 4px;
+   margin-bottom: 16px;
+   border: 1px solid #a1ecd9;
+}
 
+.formularioCrear p{
+   height: 40px;
+   text-align: center;
+   font-size: 18px;
+}
+/*Efectos de los links */
+.formularioCrear a:hover{
+   color: white;
+   transform: scale(1,2);
+}
+#botonRegistrar{
+   width: 100%;
+   background-color: #bd68dd;
+   border: none;
+   padding: 12px;
+   color: white;
+   margin: 16px 0;
+   font-size: 16px;
 }
