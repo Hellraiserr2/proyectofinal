@@ -118,28 +118,83 @@ header{
  #bloque{
    display: flex;
  }
- /* ? SHOPPING CART */
-.shopping-cart-items {
-    padding: 20px 0px;
-  }
-  
-  .shopping-cart-header {
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .shopping-cart-image {
-    max-width: 80px;
-    border-radius: 20px;
-  }
-  
-  .shopping-cart-quantity-input {
-    max-width: 45px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #eee;
-    padding: 5px;
-  }
-  
-  .shopping-cart-total {
-    min-height: 96px;
-  }
+
+.shop-content{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin-top: 30px;
+   margin-left: 80px;
+   margin-right: 80px;
+   margin-bottom: 30px;
+}
+.card{
+   box-shadow: 0 4px 8px 0 rgba(188, 53, 237, 0.2);
+   max-width: 300px;
+   margin: auto;
+   text-align: center;
+   font-family: arial;
+}
+.card > img{
+   width: 90%;
+   height: 250px;
+}
+.price{
+   color: grey;
+   font-size: 22px;
+}
+.card button:hover{
+   opacity: 0.7;
+   background-color: #8268dd;
+}
+.modal-container {
+   width: 80%;
+   margin: 0 10%;
+   max-height: 88vh;
+   color: #e2ffff;
+   background-color: #8268dd;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: fixed;
+   overflow: auto;
+   z-index: 9;
+   top: 12vh;
+   scrollbar-color: none;
+}
+.modal-container::-webkit-scrollbar{
+   display: none;
+}
+.modal-header{
+   display: flex;
+   justify-content: space-around;
+   background-color: #8268dd;
+   color: #fff;
+   width: 100%;
+}
+.modal-header-title{
+   justify-self: start;
+}
+.modal-header-button{
+   cursor: pointer;
+}
+.modal-container > .modal-content{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   width: 70%;
+   margin: 10px;
+}
+
+.modal-container > div > img{
+   height: 120px;
+   width: 120px;
+
+}
+.total-content{
+   font-size: 25px;
+   padding: 20px;
+   text-align: center;
+   padding-top: 20px;
+}
