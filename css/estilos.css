@@ -163,3 +163,7 @@ i{
 #letrasFooter{
     color: #8268dd;
 }
+.carouselExample{
+    height: 400px;
+    position: relative;
+}

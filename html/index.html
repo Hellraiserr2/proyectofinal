@@ -25,56 +25,26 @@
     <a href="../html/carroDeCompras.html" class="btn"><button>Carrito</button></a>
   </header>
   <!--Carrousel con sus 3 items-->
-  <div id="itemsCarrousel">
-    <!--caeeousel 1-->
-    <div class="carrousel" id="carrousel1">
-      <div class="tarjetaCarrousel" id="tarjetaC1">
-        <img src="../src/plantas.jpg" alt="planta1" width="100%" height="100%">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../src/iamgen-de-una-buganvilia.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="flechasCarrousel">
-        <a href="#carrousel3">
-          <i class="fas fa-chevron-left"></i>
-        </a>
-        <a href="#carrousel2">
-          <i class="fas fa-chevron-right"></i>
-        </a>
+      <div class="carousel-item">
+        <img src="../src/que-plantar-en-jardineras-exterior.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../src/portadaInteriores.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <!--carrousel 2-->
-    <div class="carrousel" id="carrousel2">
-      <div class="tarjetaCarrousel" id="tarjetaC2">
-        <img src="../src/que-plantar-en-jardineras-exterior.jpg" alt="planta2" width="100%" height="100%">
-      </div>
-      <div class="flechasCarrousel">
-        <a href="#carrousel1">
-          <i class="fas fa-chevron-left"></i>
-            
-          </i>
-        </a>
-        <a href="#carrousel3">
-          <i class="fas fa-chevron-right">
-            
-          </i>
-        </a>
-      </div>
-    </div>
-    <!--carrousel 3-->
-    <div class="carrousel" id="carrousel3">
-      <div class="tarjetaCarrousel" id="tarjetaC3">
-        <img src="../src/iamgen-de-una-buganvilia.jpg" alt="planta1" width="100%" height="100%">
-      </div>
-      <div class="flechasCarrousel">
-        <a href="#carrousel2">
-          <i class="fas fa-chevron-left">
-          </i>
-        </a>
-        <a href="#carrousel1">
-          <i class="fas fa-chevron-right">
-          </i>
-        </a>
-
-      </div>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
   <!--Puntos del carrusel para poder moverlo-->
   <div id="puntosCarrousel">
