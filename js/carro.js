@@ -75,6 +75,7 @@ verCarrito.addEventListener("click", () =>{
             <img src="${product.img}">
             <h3>${product.nombre}</h3>
             <p>${product.precio} $ </p>
+            <a href="../html/compraDatos.html" class="btn btn-primary">Comprar</a>
         `;
         modalContainer.append(carritoContent);
     });
