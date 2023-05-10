@@ -80,3 +80,14 @@ const validarPassword2 = () =>{
 		campos['password'] = true;
     }
 }
+
+inputs.forEach((input) => {
+	input.addEventListener('keyup', validarFormulario);
+	input.addEventListener('blur', validarFormulario);
+});
+
+
+formulario.addEventListener('submit', (e) => {
+	e.preventDefault();
+    
+});
