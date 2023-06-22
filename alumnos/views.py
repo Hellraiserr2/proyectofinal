@@ -42,4 +42,4 @@ def pagPlantas(request):
 #a
 def producto_1_informacion(request):
     context={}
-    return render(request,'alumnos/producto_1_informacion',context)
+    return render(request,'alumnos/producto_1_informacion.html',context)
