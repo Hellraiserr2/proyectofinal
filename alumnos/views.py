@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from .models import Usuario,Producto
+from django.http import HttpResponseRedirect
+from django.forms import ModelForm
 
+from .forms import UsuarioForm
 # Create your views here.
 def index(request):
     context={}
@@ -10,11 +13,6 @@ def index(request):
 def carroCompra(request):
     context={}
     return render(request, 'alumnos/carroDeCompras.html', context)
-
-#vista del formulario de creacion de cuenta
-def crearCuenta(request):
-    context={}
-    return render(request,'alumnos/crearCuenta.html', context)
 
 #vista de los datos del producto
 def compraDatos(request):
@@ -45,3 +43,23 @@ def producto_1_informacion(request):
     producto=Producto.objects.all()
     context={'producto':producto}
     return render(request,'alumnos/producto_1_informacion.html',context)
+
+
+#Crud de usuarios
+
+
+def crearCuenta(request):
+    if request.method == "POST":
+        form = UsuarioForm(request.POST)
+        if form.is_valid():
+            form.save()
+            form=UsuarioForm()
+            context={'mensaje':"datos ingresados","form":form}
+            return render(request,'alumnos/crearCuenta.html', context)
+        else:
+            context = {'form':form}
+            return render(request,'alumnos/crearCuenta.html',context)
+    else:
+        form = UsuarioForm()
+        context={'form':form}
+        return render(request,'alumnos/crearCuenta.html', context)

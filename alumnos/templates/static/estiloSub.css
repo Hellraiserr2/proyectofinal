@@ -34,9 +34,9 @@ header{
       transition: all 0.3s;
    }
    /*Este bloque es para que el logo se agrande cuando pasen por el*/
-   .header.logo img:hover{
-      transform: scale(1,2);
-   }
+   .header.logo img:hover {
+	transform: scale(1.2);
+ 	}
    .header .nav-links{
       list-style: none;
    }
