@@ -103,3 +103,33 @@ formulario.addEventListener('submit', (e) => {
   }
 });
 
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+  
+    const terminos = document.getElementById('terminos');
+    if (campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked) {
+      // Todos los campos son válidos, enviar los datos al servidor
+      const formData = new FormData(formulario);
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', 'crearCuenta');  // Ruta de la vista que guarda los datos en la base de datos
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          // Éxito: mostrar mensaje y reiniciar el formulario
+          document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+          formulario.reset();
+          setTimeout(() => {
+            document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+          }, 5000);
+        } else {
+          // Error: mostrar mensaje de error
+          document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+        }
+      };
+      xhr.send(formData);
+    } else {
+      // Al menos un campo no es válido: mostrar mensaje de error
+      document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+    }
+  });
+  
+
