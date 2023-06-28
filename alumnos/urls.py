@@ -14,5 +14,9 @@ urlpatterns = [
     path('producto_1_informacion.html', views.producto_1_informacion, name='producto_1_informacion'),
     path('crearCuenta', views.crearCuenta, name='crearCuenta'),
     path('tablaProd.html', views.tablaProd, name='tablaProd'),
-
+    path('eliminarProd/<str:pk>/', views.eliminarProd, name='eliminarProd'),
+    path('mostrar_productos',views.mostrar_productos, name="mostrar_productos")
 ]
+
+
+

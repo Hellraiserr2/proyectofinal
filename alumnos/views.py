@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Usuario,Producto
 from django.http import HttpResponseRedirect
 from django.forms import ModelForm
+from .forms import UsuarioForm
 
 from .forms import UsuarioForm
 # Create your views here.
@@ -64,10 +65,28 @@ def crearCuenta(request):
 
 def tablaProd(request):
     producto = Producto.objects.all()
-    context={'producto':producto}
+    context={'productos':producto}
     return render(request,'alumnos/tablaProd.html', context)
 
 def mostrar_productos(request):
     producto = Producto.objects.all()
-    context={'producto':producto}
+    context={'productos':producto}
     return render(request, 'alumnos/tablaProd.html', context)
+
+
+def eliminarProd(request, pk):
+    context = {}
+    try:
+        producto = Producto.objects.get(nombreProducto=pk)
+        producto.delete()
+        mensaje = "Producto eliminado..."
+        productos = Producto.objects.all()
+        context = {'productos': productos, 'mensaje': mensaje}  
+    except Producto.DoesNotExist:
+        mensaje = "Error: Producto no existente..."
+        productos = Producto.objects.all()
+        context = {'productos': productos, 'mensaje': mensaje} 
+    return render(request, 'alumnos/tablaProd.html', context)
+
+
+
