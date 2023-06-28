@@ -46,8 +46,6 @@ def producto_1_informacion(request):
 
 
 #Crud de usuarios
-
-
 def crearCuenta(request):
     if request.method == "POST":
         form = UsuarioForm(request.POST)
@@ -63,3 +61,13 @@ def crearCuenta(request):
         form = UsuarioForm()
         context={'form':form}
         return render(request,'alumnos/crearCuenta.html', context)
+
+def tablaProd(request):
+    producto = Producto.objects.all()
+    context={'producto':producto}
+    return render(request,'alumnos/tablaProd.html', context)
+
+def mostrar_productos(request):
+    producto = Producto.objects.all()
+    context={'producto':producto}
+    return render(request, 'alumnos/tablaProd.html', context)

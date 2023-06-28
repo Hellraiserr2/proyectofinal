@@ -1,0 +1,126 @@
+table {
+    width: 80%;
+    margin: 0 auto; /* Centrar la tabla horizontalmente */
+    border-collapse: collapse;
+    background-color: #f8f8f8;
+    align-items: center;
+
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #8268dd;
+    color: white;
+  }
+/*El import es para importar la fuente de la letra de google*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+header{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: 'Lobster', cursive;
+ font-size: 17px;
+ 
+}
+body{
+   background-color:#e2ffff;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+header{
+   background-color: #a1ecd9;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 100px;
+   padding: 5px 10%;
+}
+/*este header.logo es para que cuando se pase el mouse por el logo se pueda clickear*/
+.header .logo{
+   cursor: pointer;
+   margin-right:auto ;
+
+}
+.header .logo img{
+   height: 100px;
+   width: auto;
+   /*Transition es para que la imagen se demore en agrandar*/
+   transition: all 0.3s;
+}
+/*Este bloque es para que el logo se agrande cuando pasen por el*/
+.header.logo img:hover{
+   transform: scale(1,2);
+}
+.header .nav-links{
+   list-style: none;
+}
+/*selecciono los elementos li para alinearlos de derecha a izquierda*/
+.header .nav-links li{
+   display: inline-block;
+   padding: 0 20px;
+
+}
+.header .nav-links li:hover{
+   transform: scale(1.1);
+
+}
+.header .nav-links a{
+   font-size: 1000;
+   color: #8268dd;
+   text-decoration: none;
+}
+.header .nav-links li a:hover{
+   color: #bd68dd;
+}
+.header .btn button{
+   font-weight: 700;
+   color: aliceblue;
+   padding: 9px 25px;
+   background-color: #8268dd;
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+}
+.header .btn button:hover{
+   background-color: #8268dd;
+   color: #68dda1;
+   transform: scale(1,1);
+}
+#footer{
+    background-color: #a1ecd9;
+    height: 200px;
+    font-family: 'Lobster', cursive;
+    font-size: 17px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    padding: 20px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+#letrasFooter{
+    color: #8268dd;
+}
+.carouselExample{
+    height: 400px;
+    position: relative;
+}
+html, body {
+    height: 100%;
+  }
+.content {
+    flex: 1;
+  }
+  .table-container {
+    margin-top: 100px; 
+  }
+  
