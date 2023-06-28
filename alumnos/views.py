@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Usuario,Producto
 
 # Create your views here.
 def index(request):
@@ -41,5 +42,6 @@ def pagPlantas(request):
 
 #a
 def producto_1_informacion(request):
-    context={}
+    producto=Producto.objects.all()
+    context={'producto':producto}
     return render(request,'alumnos/producto_1_informacion.html',context)

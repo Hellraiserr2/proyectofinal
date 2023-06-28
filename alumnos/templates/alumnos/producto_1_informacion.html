@@ -43,7 +43,16 @@
       <div class="product-description">
         <span>Planta exterior</span>
         <h1>Grupo hijuelas</h1>
-        <p>Una planta bonita para los espacios exteriores ya que esta misma es una variedad de plantas en 1 solo mascetero la cual se ve que esta misma sea su propio ecosistema</p>
+        <ul>
+
+        </ul>
+          {% for producto in productos %}
+          <li>
+            {{ producto.nombreProducto }}, {{ producto.precio }}
+          </li>
+          {% endfor%}
+
+        
       </div>
    
       
