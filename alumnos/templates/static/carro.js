@@ -7,13 +7,13 @@ const productos =[
         id: 1,
         nombre:"planta1",
         precio: 4000,
-        img:"../src/GrupoHijuelas.jpg"
+        img:"GrupoHijuelas.jpg"
     },
     {
         id: 2,
         nombre:"planta2",
         precio:5000,
-        img:"../src/plantainterior2.jpg"
+        img:"..alumnos/static/src/plantainterior2.jpg"
     }
 ]
 let carrito = [];
