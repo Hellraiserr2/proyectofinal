@@ -137,3 +137,17 @@ header{
    margin: 16px 0;
    font-size: 16px;
 }
+.header .logo {
+	cursor: pointer;
+	margin-right: auto;
+}
+
+.header .logo img {
+	height: 100px;
+	width: auto;
+	transition: all 0.3s;
+}
+
+.header .logo img:hover {
+	transform: scale(1.2);
+}

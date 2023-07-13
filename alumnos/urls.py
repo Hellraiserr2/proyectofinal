@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 urlpatterns = [
@@ -16,7 +18,7 @@ urlpatterns = [
     path('tablaProd.html', views.tablaProd, name='tablaProd'),
     path('eliminarProd/<str:pk>/', views.eliminarProd, name='eliminarProd'),
     path('mostrar_productos',views.mostrar_productos, name="mostrar_productos")
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
 
