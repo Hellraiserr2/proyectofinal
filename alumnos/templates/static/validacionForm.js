@@ -21,23 +21,23 @@ const validarFormulario = (e) => {
   switch (e.target.name) {
     case "usuario":
       validarCampo(expresiones.usuario, e.target, 'usuario');
-      break;
+    break;
     case "nombre":
       validarCampo(expresiones.nombre, e.target, 'nombre');
-      break;
+    break;
     case "password":
       validarCampo(expresiones.password, e.target, 'password');
       validarPassword2();
-      break;
+    break;
     case "password2":
       validarPassword2();
-      break;
+    break;
     case "correo":
       validarCampo(expresiones.correo, e.target, 'correo');
-      break;
+    break;
     case "telefono":
       validarCampo(expresiones.telefono, e.target, 'telefono');
-      break;
+    break;
   }
 }
 

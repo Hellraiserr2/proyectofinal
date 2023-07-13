@@ -21,12 +21,12 @@ header{
    padding: 5px 10%;
 }
 /*este header.logo es para que cuando se pase el mouse por el logo se pueda clickear*/
-.header .logo{
+.header.logo{
    cursor: pointer;
    margin-right:auto ;
 
 }
-.header .logo img{
+.header.logo img{
    height: 100px;
    width: auto;
    /*Transition es para que la imagen se demore en agrandar*/
@@ -36,28 +36,28 @@ header{
 .header.logo img:hover{
    transform: scale(1,2);
 }
-.header .nav-links{
+.header.nav-links{
    list-style: none;
 }
 /*selecciono los elementos li para alinearlos de derecha a izquierda*/
-.header .nav-links li{
+.header.nav-links li{
    display: inline-block;
    padding: 0 20px;
 
 }
-.header .nav-links li:hover{
+.header.nav-links li:hover{
    transform: scale(1.1);
 
 }
-.header .nav-links a{
+.header.nav-links a{
    font-size: 1000;
    color: #8268dd;
    text-decoration: none;
 }
-.header .nav-links li a:hover{
+.header.nav-links li a:hover{
    color: #bd68dd;
 }
-.header .btn button{
+.header.btn button{
    font-weight: 700;
    color: aliceblue;
    padding: 9px 25px;
@@ -67,7 +67,7 @@ header{
    cursor: pointer;
    transition: all 0.3s ease 0s;
 }
-.header .btn button:hover{
+.header.btn button:hover{
    background-color: #8268dd;
    color: #68dda1;
    transform: scale(1,1);
