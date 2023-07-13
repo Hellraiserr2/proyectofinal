@@ -37,6 +37,10 @@
                 <label for="remember">Recordar</label>
             </div>
             <input type="submit" value="Ingresar">
+
+            <div class="back-button">
+                <button onclick="goBack()">Volver</button>
+            </div>
         </form>
 
         <script>
@@ -76,6 +80,9 @@
             function isValidEmail(email) {
                 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 return emailPattern.test(email);
+            }
+            function goBack() {
+            window.history.back();
             }
         </script>
     </section>

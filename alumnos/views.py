@@ -88,5 +88,8 @@ def eliminarProd(request, pk):
         context = {'productos': productos, 'mensaje': mensaje} 
     return render(request, 'alumnos/tablaProd.html', context)
 
+def login(request):
+    context={}
+    return render(request,'alumnos/login.html', context)
 
 

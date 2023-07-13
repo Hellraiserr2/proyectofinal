@@ -17,7 +17,8 @@ urlpatterns = [
     path('crearCuenta', views.crearCuenta, name='crearCuenta'),
     path('tablaProd.html', views.tablaProd, name='tablaProd'),
     path('eliminarProd/<str:pk>/', views.eliminarProd, name='eliminarProd'),
-    path('mostrar_productos',views.mostrar_productos, name="mostrar_productos")
+    path('mostrar_productos',views.mostrar_productos, name="mostrar_productos"),
+    path('login.html',views.login, name='login')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
